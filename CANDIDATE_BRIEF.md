@@ -63,7 +63,7 @@ see this repository, so nothing about your solution may live here. Instead,
 create a private copy of your own:
 
 ```bash
-git clone --bare https://github.com/<org>/referral-matching-trial.git
+git clone --bare https://github.com/clever-real-estate/referral-matching-trial.git
 cd referral-matching-trial.git
 git push --mirror https://github.com/<your-username>/referral-trial-private.git
 ```
