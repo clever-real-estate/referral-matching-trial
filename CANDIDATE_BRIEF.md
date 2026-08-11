@@ -57,9 +57,10 @@ AI helped, where it was unreliable or wrong, and how you checked the result.
 
 ## Getting the code
 
-This repository is public. **Do not fork it publicly and do not open pull
-requests or issues against it** — that would publish your solution to future
-candidates. Instead, create a private copy:
+You have been given read access to this private repository. **Do not fork it
+and do not open pull requests or issues against it** — other candidates will
+see this repository, so nothing about your solution may live here. Instead,
+create a private copy of your own:
 
 ```bash
 git clone --bare https://github.com/<org>/referral-matching-trial.git
