@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #f4f6f8;
+  color: #1e2a32;
+}
+
+.shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px 64px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #d8dfe5;
+  padding-bottom: 12px;
+}
+
+.topbar h1 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  border-bottom-color: #0b6e4f;
+  font-weight: 600;
+}
+
+.identity-picker {
+  font-size: 13px;
+  color: #5b6b76;
+}
+
+.state-note {
+  margin-top: 32px;
+  color: #5b6b76;
+}
+
+.error-banner {
+  background: #fdecea;
+  border: 1px solid #f5c6c0;
+  padding: 12px;
+  border-radius: 6px;
+  color: #8a2318;
+}
+
+.toast {
+  background: #e8f5ee;
+  border: 1px solid #bfe3cf;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.offer-card {
+  background: #fff;
+  border: 1px solid #dde4e9;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.offer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.offer-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.intent {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef1f4;
+}
+
+.intent-hot {
+  background: #fdeaea;
+  color: #a33;
+}
+
+.intent-warm {
+  background: #fdf3e2;
+  color: #8a6116;
+}
+
+.offer-facts {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.offer-facts dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7a8893;
+}
+
+.offer-facts dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
+
+.urgent {
+  color: #a33;
+}
+
+.match-explanation summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: #0b6e4f;
+}
+
+.match-explanation ul {
+  font-size: 13px;
+  color: #45535d;
+}
+
+.offer-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.claim-btn {
+  flex: 1;
+  background: #a5d8bc;
+  color: #fefefe;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.claim-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.decline-btn {
+  background: #fff;
+  border: 1px solid #dde4e9;
+  border-radius: 6px;
+  width: 40px;
+  cursor: pointer;
+  color: #7a8893;
+}
+
+.ops-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid #dde4e9;
+  font-size: 13px;
+}
+
+.ops-table th,
+.ops-table td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.ops-table th {
+  background: #f8fafb;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7a8893;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #eef1f4;
+}
+
+.status-assigned {
+  background: #e8f5ee;
+  color: #14603f;
+}
+
+.status-offered {
+  background: #fdf3e2;
+  color: #8a6116;
+}
+
+.chip {
+  display: inline-block;
+  margin: 1px 4px 1px 0;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #eef1f4;
+  font-size: 11px;
+}
+
+.chip-accepted {
+  background: #e8f5ee;
+}
+
+.chip-declined,
+.chip-expired {
+  background: #fdecea;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #0b6e4f;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.detail-row td {
+  background: #f8fafb;
+}
+
+.timeline ol {
+  max-height: 240px;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+.override-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.override-box input {
+  width: 130px;
+  padding: 4px 6px;
+}
