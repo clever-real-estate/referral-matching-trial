@@ -57,18 +57,20 @@ AI helped, where it was unreliable or wrong, and how you checked the result.
 
 ## Getting the code
 
-This repository is public. **Do not fork it publicly and do not open pull
-requests or issues against it** — that would publish your solution to future
-candidates. Instead, create a private copy:
+You have been given read access to this private repository. **Do not fork it
+and do not open pull requests or issues against it** — other candidates will
+see this repository, so nothing about your solution may live here. Instead,
+create a private copy of your own:
 
 ```bash
-git clone --bare https://github.com/<org>/referral-matching-trial.git
+git clone --bare https://github.com/clever-real-estate/referral-matching-trial.git
 cd referral-matching-trial.git
 git push --mirror https://github.com/<your-username>/referral-trial-private.git
 ```
 
 (Create `referral-trial-private` as a **private** repository first, then
-invite the reviewers your recruiter names as collaborators.)
+invite the reviewers as collaborators: `@rymccue`, `@mikejaffe`, and
+`@brianCTRL`.)
 
 Work on a branch in your private copy and open the pull request there.
 **Please keep your real commit history** — do not squash to a single commit;
