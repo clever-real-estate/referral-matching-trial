@@ -69,7 +69,7 @@ git push --mirror https://github.com/<your-username>/referral-trial-private.git
 ```
 
 (Create `referral-trial-private` as a **private** repository first, then
-invite the reviewers as collaborators: `@rymccue`, `@mikejaffe`, and
+invite the reviewers as collaborators: `@mikejaffe` and
 `@brianCTRL`.)
 
 Work on a branch in your private copy and open the pull request there.
